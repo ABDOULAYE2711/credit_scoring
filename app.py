@@ -106,3 +106,7 @@ if st.button('Predict'):
     
     st.write(' Le client est de classe '+ str(prediction))
     
+    
+if __name__ == '__main__':
+    run()
+    
