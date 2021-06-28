@@ -21,8 +21,7 @@ model = load_model('Final_Model_gbc')
 
 
 st.title(' App Web de crédit scoring')
-st.write("Il s'agit d'une application Web pour classer les clients d’une banque en bon ou mauvais\
-     prêteur en fonction de  plusieurs fonctionnalités que vous pouvez voir dans la barre latérale.")
+st.write("Il s'agit d'une application Web pour classer les clients d’une banque en bon ou mauvais prêteur.")
 
 
 Maturite_mois = st.sidebar.slider(label = 'Maturité mois', min_value = 16,
