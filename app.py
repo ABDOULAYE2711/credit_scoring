@@ -97,13 +97,15 @@ features = {'Maturité mois': Maturite_mois, 'Montant Prêt BAM': Montant_Pret_B
 
 features_df  = pd.DataFrame([features])
 
+map_dict = {0:'Bon client',
+            1:'Mauvais client'}
 st.table(features_df)  
 
 if st.button('Predict'):
     
     prediction = predict_client(model, features_df)
     
-    st.write(' Le client est de classe '+ str(prediction))
+    st.write("La prediction est : {}".format(map_dict [prediction]))
     
  
     
