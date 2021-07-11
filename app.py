@@ -17,7 +17,7 @@ def predict_client(model, df):
     
     return predictions_data['Label'][0]
     
-model = load_model('Final_Model_gbc','rb')
+model = load_model('Final_Model_gbc')
 
 
 st.title(' App Web de crédit scoring')
