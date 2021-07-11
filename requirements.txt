@@ -2,3 +2,4 @@ numpy
 pandas
 pycaret
 streamlit==0.82.0
+pickle
