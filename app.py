@@ -13,7 +13,7 @@ import numpy as np
 
 def predict_client(model, df):
     
-    predictions_data = predict_model(estimator = model, data = df)
+    predictions_data = predict_model(model, df)
     
     return predictions_data['Label'][0]
     
